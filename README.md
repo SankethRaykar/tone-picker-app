@@ -116,21 +116,21 @@ mistral.api.key=${MISTRAL_API_KEY}
 
 ```bash
 ./mvnw spring-boot:run
-
-2. Frontend Setup
+---
+### 2.Frontend Setup
 Navigate to frontend/.
 
 Open index.html in your browser.
 
 The frontend will connect to the backend at http://localhost:8080.
 
-
-🌐 Deployment & Video
+---
+## 🌐 Deployment & Video
 Deployed App Link: Insert your Vercel/Render link here
 
 Video Recording: Insert your demo video link here
-
-📝 Notes
+---
+##📝 Notes
 Frontend and backend are completely separated for modularity.
 
 Undo/redo and tone previews are fully functional.

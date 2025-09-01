@@ -10,6 +10,19 @@ This is a full-stack web application that allows users to adjust the tone of the
 .
 ├── backend/
 │   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       │   └── com/tonepicker/backend/
+│   │       │       ├── TonePickerBackendApplication.java
+│   │       │       ├── controller/
+│   │       │       │   └── ToneController.java
+│   │       │       ├── model/
+│   │       │       │   ├── ToneRequest.java
+│   │       │       │   └── ToneResponse.java
+│   │       │       └── service/
+│   │       │           └── MistralService.java
+│   │       └── resources/
+│   │           └── application.properties
 │   ├── pom.xml
 │   └── .gitignore
 ├── frontend/
@@ -18,9 +31,6 @@ This is a full-stack web application that allows users to adjust the tone of the
 │   └── script.js
 └── README.md
 
-
-
----
 
 ## ✅ Technologies Used
 

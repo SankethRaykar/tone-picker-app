@@ -138,4 +138,4 @@ Undo/redo and tone previews are fully functional.
 Loading indicators provide clear feedback while the API processes requests.
 
 The project follows best practices for code quality, organization, and UX.
->>>>>>> 57b8e4d (added readme file)
+

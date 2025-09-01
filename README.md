@@ -111,12 +111,12 @@ spring.main.allow-bean-definition-overriding=true
 mistral.api.key=${MISTRAL_API_KEY}
 
 
-
 3. Run the Spring Boot app:
 
 ```bash
 ./mvnw spring-boot:run
 ---
+                     
 ### 2.Frontend Setup
 Navigate to frontend/.
 
@@ -126,16 +126,14 @@ The frontend will connect to the backend at http://localhost:8080.
 
 ---
 ## 🌐 Deployment & Video
-Deployed App Link: Insert your Vercel/Render link here
-
-Video Recording: Insert your demo video link here
+- **Deployed App Link:** Insert your Vercel/Render link here
+- **Video Recording:** Insert your demo video link here
 ---
+
+
 ##📝 Notes
 Frontend and backend are completely separated for modularity.
-
 Undo/redo and tone previews are fully functional.
-
 Loading indicators provide clear feedback while the API processes requests.
-
 The project follows best practices for code quality, organization, and UX.
 

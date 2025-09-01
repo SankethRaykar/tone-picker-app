@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Tone Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>AI Tone Picker</h1>
+            <p>Adjust the tone of your text instantly</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="card editor-card">
+                <h2>Text Editor</h2>
+                <textarea id="inputText" placeholder="Write or paste your text here..."></textarea>
+                <div class="controls-bottom">
+                    <button id="undoBtn" class="btn btn-secondary" disabled>Undo</button>
+                    <button id="redoBtn" class="btn btn-secondary" disabled>Redo</button>
+                    <div id="loadingStatus" class="loading-status">
+                        <div class="spinner" id="loader"></div>
+                        <span id="statusText"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card controls-card">
+                <h2>Adjust Tone</h2>
+                <div class="tone-grid-container">
+                    <div class="tone-axis-y">
+                      <br>
+                        <span>Formal</span>
+                        <br><br><br>
+                        <span>Neutral</span>
+                        <br><br><br>
+                        <span>Casual</span>
+                        
+                    </div>
+                    <div class="tone-grid">
+                        <button data-x="0" data-y="0" title="Formal + Concise"></button>
+                        <button data-x="1" data-y="0" title="Formal + Neutral"></button>
+                        <button data-x="2" data-y="0" title="Formal + Expanded"></button>
+                        <button data-x="0" data-y="1" title="Neutral + Concise"></button>
+                        <button data-x="1" data-y="1" title="Neutral + Neutral"></button>
+                        <button data-x="2" data-y="1" title="Neutral + Expanded"></button>
+                        <button data-x="0" data-y="2" title="Casual + Concise"></button>
+                        <button data-x="1" data-y="2" title="Casual + Neutral"></button>
+                        <button data-x="2" data-y="2" title="Casual + Expanded"></button>
+                    </div>
+                    <div class="tone-axis-x">
+                        <span>Concise</span>
+                        <span>Neutral</span>
+                        <span>Expanded</span>
+                    </div>
+                </div>
+                <div id="tonePreview" class="tone-preview">Tone: Original</div>
+                <button id="resetBtn" class="btn btn-primary">Reset</button>
+                <div id="errorMsg" class="error-msg"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

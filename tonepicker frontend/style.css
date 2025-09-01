@@ -1,0 +1,280 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --secondary-color: #6c757d;
+    --card-bg: #ffffff;
+    --border-color: #e9ecef;
+    --text-color: #343a40;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-deep: 0 8px 30px rgba(0, 0, 0, 0.2);
+    --accent-color: #ffc107;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f2f1, #b2ebf2);
+    background-size: 200% 200%;
+    animation: background-pan 15s ease-in-out infinite alternate;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.5s ease-in-out;
+}
+
+@keyframes background-pan {
+    from { background-position: 0% 0%; }
+    to { background-position: 100% 100%; }
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a237e;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #455a64;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    padding: 2.5rem;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-deep);
+}
+
+h2 {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 95%;
+    height: 300px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.controls-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 6px 12px rgba(108, 117, 125, 0.3);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.loading-status {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.controls-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tone-grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.tone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 12px;
+}
+
+.tone-grid button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #f0f4f7;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-out, background-color 0.2s ease;
+    box-shadow: 0 4px 0 #d1d9e6, 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tone-grid button:hover {
+    background-color: #e3f2fd;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 0 #a9aeb8, 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tone-grid button:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 2px 0 #d1d9e6;
+}
+
+.tone-grid button.active {
+    background-color: var(--accent-color);
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7), inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    animation: pulsate 1s infinite alternate;
+}
+
+@keyframes pulsate {
+    from { box-shadow: 0 0 15px rgba(255, 193, 7, 0.7), inset 0 0 5px rgba(0, 0, 0, 0.2); }
+    to { box-shadow: 0 0 25px rgba(255, 193, 7, 0.9), inset 0 0 8px rgba(0, 0, 0, 0.3); }
+}
+
+.tone-axis-y, .tone-axis-x {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.tone-axis-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tone-axis-x {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2 / 3;
+}
+
+.tone-preview {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.error-msg {
+    color: #dc3545;
+    font-weight: 500;
+    margin-top: 1rem;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}

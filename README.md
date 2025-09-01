@@ -9,14 +9,15 @@ This is a full-stack web application that allows users to adjust the tone of the
 
 .
 ├── backend/
-│ ├── src/
-│ ├── pom.xml
-│ └── .gitignore
+│   ├── src/
+│   ├── pom.xml
+│   └── .gitignore
 ├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 └── README.md
+
 
 
 ---

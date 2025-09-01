@@ -6,7 +6,8 @@ This is a full-stack web application that allows users to adjust the tone of the
 ---
 
 ## 📁 Project Structure
-
+       
+```
 .
 ├── backend/
 │   ├── src/
@@ -30,8 +31,9 @@ This is a full-stack web application that allows users to adjust the tone of the
 │   ├── style.css
 │   └── script.js
 └── README.md
-
-
+       
+```
+---
 ## ✅ Technologies Used
 
 **Frontend:**  

@@ -6,7 +6,10 @@ This is a full-stack web application that allows users to adjust the tone of the
 ---
 
 ## 📁 Project Structure
+<<<<<<< HEAD
 
+=======
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
        
 ```
 .
@@ -35,7 +38,10 @@ This is a full-stack web application that allows users to adjust the tone of the
        
 ```
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
 ## ✅ Technologies Used
 
 **Frontend:**  
@@ -107,18 +113,25 @@ This is a full-stack web application that allows users to adjust the tone of the
 1. Navigate to `backend/`.  
 2. Create `src/main/resources/application.properties` with:
 
+<<<<<<< HEAD
 ```java
+=======
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
 spring.application.name=tone-picker-backend
 server.port=8080
 spring.main.allow-bean-definition-overriding=true
 mistral.api.key=${MISTRAL_API_KEY}
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
 
 
 3. Run the Spring Boot app:
 
 ```bash
 ./mvnw spring-boot:run
+<<<<<<< HEAD
 
 ```
 
@@ -127,10 +140,19 @@ mistral.api.key=${MISTRAL_API_KEY}
 1. Navigate to frontend/.
 
 2. Open index.html in your browser.
+=======
+---
+                     
+### 2.Frontend Setup
+Navigate to frontend/.
+
+Open index.html in your browser.
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
 
 The frontend will connect to the backend at http://localhost:8080.
 
 ---
+<<<<<<< HEAD
 
 ## 🌐 Deployment & Video
 
@@ -144,3 +166,17 @@ The frontend will connect to the backend at http://localhost:8080.
 - Loading indicators provide clear feedback while the API processes requests.
 
  
+=======
+## 🌐 Deployment & Video
+- **Deployed App Link:** Insert your Vercel/Render link here
+- **Video Recording:** Insert your demo video link here
+---
+
+
+##📝 Notes
+Frontend and backend are completely separated for modularity.
+Undo/redo and tone previews are fully functional.
+Loading indicators provide clear feedback while the API processes requests.
+The project follows best practices for code quality, organization, and UX.
+
+>>>>>>> a50deee165d2ccee8640b77045c42809706db5f5
